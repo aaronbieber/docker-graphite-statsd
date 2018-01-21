@@ -11,4 +11,5 @@ services:
       - "192.168.10.46:8126:8126"
     volumes:
       - "./data/graphite/storage:/opt/graphite/storage"
+      - "/etc/localtime:/etc/localtime:ro"
     restart: always
