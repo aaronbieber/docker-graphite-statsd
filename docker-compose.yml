@@ -10,6 +10,7 @@ services:
       - "192.168.10.46:8125:8125/udp"
       - "192.168.10.46:8126:8126"
     volumes:
+      - "./data/graphite/conf:/opt/graphite/conf"
       - "./data/graphite/storage:/opt/graphite/storage"
       - "/etc/localtime:/etc/localtime:ro"
     restart: always
